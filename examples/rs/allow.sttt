@@ -1,0 +1,1 @@
+allow(<%= a[1].or_fill_me %>).to receive(:<%= a[2].or_fill_me %>)<%= a[4] ? ".with(#{a[4..-1].join(', ')})" : '' %><%= a[3] ? ".and_return(#{a[3]})" : '' %>
