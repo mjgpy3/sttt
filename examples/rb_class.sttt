@@ -1,6 +1,6 @@
 class <%= a[1] %>
   <% if a[2] %>
-  def initialize(Xx)
+  def initialize(<%= a[2..-1].join(', ') %>)
   end
   <% end %>
 end
