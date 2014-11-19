@@ -15,4 +15,4 @@ matching_template = -> { template_names.().select { |n| n.match(matcher.()) }.fi
 a = ARGV
 
 renderer = ERB.new(File.open(matching_template.(), 'r', &:read))
-puts renderer.result(binding)
+print renderer.result(binding)
