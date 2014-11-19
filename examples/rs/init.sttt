@@ -1,0 +1,4 @@
+require 'rails_helper'
+
+describe <%= a[1] %> do
+end
