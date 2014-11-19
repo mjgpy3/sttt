@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 # ARGV[0] = template matcher regex
+# ARGV[1..-1] additional args to pass to template
 
 require 'erb'
 
