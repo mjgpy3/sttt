@@ -3,12 +3,12 @@
 # ARGV[0] = template matcher regex
 # ARGV[1..-1] additional args to pass to template
 
-require 'erb'
-
 $config = {
   template_dir: '~/.templates',
   default_fill_me_in: 'Xx'
 }
+
+require 'erb'
 
 template_names = -> { `find #{$config[:template_dir]} -name *.sttt`.split("\n") }
 matcher = -> { Regexp.compile(ARGV[0]) }
