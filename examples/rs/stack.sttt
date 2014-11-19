@@ -1,0 +1,10 @@
+<%= a[1..-1].map { |arg| {
+  'd' => "describe '#{fill_me}' do",
+  'c' => "context '#{fill_me}' do",
+  'ii' => "it { is_expected.to#{fill_me} #{fill_me} }",
+  'id' => "it '#{fill_me}' do\nend",
+  'b' => "before(:each) do\nend",
+  'l' => "let(:#{fill_me}) { #{fill_me} }",
+  's' => "subject { #{fill_me} }"
+ }[arg] }.join("\n") %>
+<%= a[1..-1].select { |i| !['b', 'l', 'ii', 'id', 's'].include?(i) }.map { |_| 'end' }.join("\n") %>

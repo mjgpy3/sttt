@@ -1,2 +1,3 @@
-module <%= a[1] %>
+module <%= a[1].or_fill_me %>
+  <%= fill_me %>
 end
