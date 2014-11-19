@@ -15,5 +15,13 @@ matching_template = -> { template_names.().select { |n| n.match(matcher.()) }.fi
 
 a = ARGV
 
+def named(name)
+  ARGV.
+    select { |a| a.start_with?("#{name}=") }.
+    first.
+    split('=').
+    last
+end
+
 renderer = ERB.new(File.open(matching_template.(), 'r', &:read))
 print renderer.result(binding)
