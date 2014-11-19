@@ -1,4 +1,4 @@
 STTT
 -----------
 
-Dead-simple templating, nothing more
+Dead-simple templating for Linux, nothing more
