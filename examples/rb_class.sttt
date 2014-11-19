@@ -1,0 +1,6 @@
+class <%= a[1] %>
+  <% if a[2] %>
+  def initialize(Xx)
+  end
+  <% end %>
+end
