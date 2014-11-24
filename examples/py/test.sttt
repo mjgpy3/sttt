@@ -1,0 +1,2 @@
+def test_<%= a[1].or_fill_me %>(self):
+    <%= fill_me %>
